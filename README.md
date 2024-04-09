@@ -1,0 +1,1 @@
+weather api is used to get current weather data.user can input city mannually and it will give the result of the input city.I also use a current user location feature if user click the current location button it will get current location and passed to fetch function to get user location's weather data 
