@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="icon-style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- desiging a header section that takes input and button -->
+      <div class="header">
+        <input
+          type="text"
+          placeholder="city"
+          spellcheck="false"
+          id="search-text"
+        />
+        <div class="buttons-parent">
+          <button class="btn btn-search">
+            <i class="icon ri-search-2-line"></i>
+          </button>
+          <button class="btn btn-location">
+            <i class="icon ri-focus-3-line"></i>
+          </button>
+        </div>
+      </div>
+      <p class="error-message">Enter valid City</p>
+      <main class="main">
+        <div class="main-content">
+          <!-- img and text -->
+          <img src="images/clear.png" alt="clear-sky" class="main-img" />
+          <h2 class="temp"><span class="temp-span">0</span>&deg;C</h2>
+          <h1 class="country-name">Germany</h1>
+        </div>
+        <div class="details">
+          <div class="humidity">
+            <img class="details-img" src="images/humidity.png" alt="" />
+            <p class="humidit"><span class="humidity-span">100</span>&#37;</p>
+            <p>Humidity</p>
+          </div>
+          <div class="wind">
+            <img class="details-img" src="images/wind.png" alt="" />
+            <p class="wind-speed">
+              <span class="wind-span">1.85</span>
+              Km/h
+            </p>
+            <p>wind speed</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
